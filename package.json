@@ -1,15 +1,18 @@
 {
   "name": "cyberpunk-chatbot",
   "version": "1.0.0",
-  "description": "Cyberpunk ChatGPT Terminal Interface",
-  "main": "server.js",
+  "description": "Astrix Haven - Cyberpunk AI Interface",
+  "private": true,
   "scripts": {
-    "start": "node server.js"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
   },
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
-    "openai": "^4.0.0"
+    "openai": "^4.0.0",
+    "next": "^14.0.0"
   }
 } 
