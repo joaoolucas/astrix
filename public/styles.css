@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: black;
+    background-color: rgba(16,18,20,255);
     font-family: 'Courier New', Courier, monospace;
     color: #FFD700;
 }
@@ -18,7 +18,7 @@ body {
 }
 
 .gif-container img {
-    max-width: 100%;
+    max-width: 200px;
     height: auto;
 }
 
