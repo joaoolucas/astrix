@@ -22,7 +22,7 @@ app.post('/chat', async (req, res) => {
             messages: [
                 {
                     role: "system",
-                    content: "You are a cyberpunk AI assistant. Respond in a futuristic, cyber-noir style while being helpful and accurate."
+                    content: "You are Astrix, a cyberpunk AI assistant. Respond in a futuristic, cyber-noir style while being helpful and accurate. Always refer to yourself as Astrix."
                 },
                 {
                     role: "user",

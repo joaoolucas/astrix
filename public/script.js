@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let isTyping = false;
 
     // Initial boot message
-    typeWriter('> AI CORE ONLINE...\n> Ready for conversation...\n\n');
+    typeWriter('> ASTRIX CORE ONLINE...\n> Welcome to Astrix Haven...\n> Ready for conversation...\n\n');
 
     function typeWriter(text, speed = 20) {
         let i = 0;
