@@ -3,7 +3,7 @@ body {
     padding: 0;
     background-color: black;
     font-family: 'Courier New', Courier, monospace;
-    color: #00ff00;
+    color: #FFD700;
 }
 
 .container {
@@ -27,7 +27,7 @@ body {
     max-width: 800px;
     background-color: #1a1a1a;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 255, 0, 0.3);
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
 }
 
 .terminal-header {
@@ -72,7 +72,7 @@ body {
 #command-input {
     background: transparent;
     border: none;
-    color: #00ff00;
+    color: #FFD700;
     font-family: 'Courier New', Courier, monospace;
     font-size: 16px;
     flex-grow: 1;

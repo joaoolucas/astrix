@@ -1,17 +1,25 @@
 document.addEventListener('DOMContentLoaded', () => {
     const input = document.getElementById('command-input');
     const output = document.getElementById('output');
+    let isTyping = false;
 
     // Initial boot message
     typeWriter('> AI CORE ONLINE...\n> Ready for conversation...\n\n');
 
-    function typeWriter(text, speed = 50) {
+    function typeWriter(text, speed = 20) {
         let i = 0;
+        isTyping = true;
+        input.disabled = true;
+
         function type() {
             if (i < text.length) {
                 output.innerHTML += text.charAt(i);
                 i++;
                 setTimeout(type, speed);
+            } else {
+                isTyping = false;
+                input.disabled = false;
+                input.focus();
             }
             output.scrollTop = output.scrollHeight;
         }
@@ -19,12 +27,13 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     input.addEventListener('keypress', async (e) => {
-        if (e.key === 'Enter') {
+        if (e.key === 'Enter' && !isTyping) {
             const message = input.value;
             if (!message.trim()) return;
 
             output.innerHTML += `\n> ${message}\n`;
             input.value = '';
+            input.disabled = true;
 
             try {
                 const response = await fetch('http://localhost:3000/chat', {
