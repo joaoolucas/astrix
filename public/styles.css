@@ -143,14 +143,13 @@ body {
     margin-bottom: 20px;
 }
 
-.x-logo {
-    width: 24px;
-    height: 24px;
-    filter: invert(1);
+.twitter-link {
+    color: #FFD700;
+    font-size: 24px;
     transition: opacity 0.3s ease;
 }
 
-.twitter-link:hover .x-logo {
+.twitter-link:hover {
     opacity: 0.8;
 }
 
