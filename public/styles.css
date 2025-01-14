@@ -134,4 +134,31 @@ body {
 
 #command-input {
     caret-color: var(--primary-color, #00ff00);
+}
+
+.social-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.x-logo {
+    width: 24px;
+    height: 24px;
+    filter: invert(1);
+    transition: opacity 0.3s ease;
+}
+
+.twitter-link:hover .x-logo {
+    opacity: 0.8;
+}
+
+.ca-soon {
+    color: #FFD700;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    animation: glitch 5s infinite;
 } 
